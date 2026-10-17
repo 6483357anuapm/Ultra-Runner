@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON RUNNER — Arcade Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="top-bar">
+      <div>
+        <p class="eyebrow">PIXEL ARCADE • 1989</p>
+        <h1>NEON <span>RUNNER</span></h1>
+      </div>
+      <div class="coin-counter">🪙 <span id="coins">0</span></div>
+    </header>
+
+    <section class="hud">
+      <div>SCORE <strong id="score">00000</strong></div>
+      <div>BEST <strong id="best">00000</strong></div>
+      <div>SPEED <strong id="speed">1.0x</strong></div>
+    </section>
+
+    <div class="canvas-wrap">
+      <canvas id="gameCanvas" width="420" height="650"></canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="overlay-card">
+          <p class="eyebrow">INSERT COIN TO PLAY</p>
+          <h2 id="overlayTitle">NEON<br><span>RUNNER</span></h2>
+          <p id="overlayText">
+            Dodge obstacles. Collect coins.<br>
+            Survive the neon highway.
+          </p>
+          <button id="startBtn">▶ START GAME</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="leftBtn" aria-label="Move left">◀</button>
+      <button id="jumpBtn" aria-label="Jump">▲</button>
+      <button id="rightBtn" aria-label="Move right">▶</button>
+    </div>
+
+    <p class="instructions">
+      ARROW KEYS / A-D TO MOVE • SPACE TO JUMP
+    </p>
+    <p class="footer">★ HIGH SCORE HUNTERS CLUB ★</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
